@@ -1,0 +1,30 @@
+<html ng-app="ang">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS </title>
+
+
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" data-semver="1.0.7"></script>
+    <script src="prueba.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl"  ng-init="inithola()">
+<table  border="1">
+  <tr ng-repeat="item in array_hola">
+    <td>{{item}}</td>
+  </tr>
+
+</table>
+<button type="button" ng-click="mv1()" name="button">Passs</button>
+<div class="">
+  <input type="text" ng-model="alo" name="" value="">
+  <button type="button" ng-click="abc(alo)" class="btn-info" name="button">Click</button>
+  <label for="">{{mostrar_obj}}</label>
+</div>
+<label style="background-color:white; width:100px; height:100px" onMouseover="this.style.color='blue'" onMouseout="this.style.color='red'">------</label>
+<label style="background-color:white; width:100px; height:100px" onMouseover="this.style.color='orange'" onMouseout="this.style.color='green'">-----</label>
+<hr  style= onMouseover="this.style.color='orange'" onMouseout="this.style.color='green'"></hr>
+  </body>
+
+</html>
